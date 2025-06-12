@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Tahoma, sans-serif';
+}
+/*Seção geral - estilos globais*/
+.secao-topo {
+    padding: 30px 30px;
+    text-align: center;
+    background-color: #afddfb;
+}
+.paragrafo-topo {
+    margin: 15px 25px;
+}
+.link-topo {
+    font-size: 18px;
+    color: #1d1d1d;
+    border-bottom: 2px solid #1d1d1d;
+    text-decoration: none;
+    margin: 10px;
+}
+.secao-banner {
+    padding: 0px 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.secao {
+    padding: 30px 30px;
+    text-align: center;
+}
+.secao h1, h2 {
+    text-align: center;
+}
+.secao h1 {
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+.secao h2 {
+    color: #1c81c0;
+    margin-top: 0px;
+    font-weight: none;
+}
+.paragrafo {
+    font-size: 18px;
+    text-align: center;
+    line-height: 18px;
+    margin: 10px auto;
+    width: 980px;
+}
+.paragrafo-sobre {
+    text-align: justify;
+}
+.imagem {
+    width: 450px;
+}
+.texto-azul {
+    color: #1c81c0;
+}
+span {
+    font-weight: bold;
+}
+.secao-servicos {
+    text-align: center;
+    padding: 30px 30px;
+    background-color: #1c81c0;
+}
+.paragrafo-servicos {
+    color: white;
+    line-height: 42px;
+    font-size: 22px;
+    width: 700px;
+    text-align: center;
+}
+.secao-servicos h2, .secao-contato h2 {
+    color: white;
+    font-size: 28px;
+    line-height: 42px;
+}
+.lista-servicos {
+    margin: 40px auto;
+    width: 135px;
+}
+.item-lista-servicos {
+    color: white;
+    line-height: 42px;
+    text-align: left;
+    font-size: 22px;
+}
+.secao-contato {
+    text-align: center;
+    padding: 30px 30px;
+    background-color: #1c81c0;
+}
+.paragrafo-contato {
+    color: #ffffff;
+    background-color: #1d1d1d;
+    padding: 15px;
+    margin: 30px auto;
+}
+.lista-contato {
+    margin: 40px auto;
+    width: 210px;
+    text-decoration: none;
+    list-style: none;
+}
+.item-lista-contato{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+.texto-amarelo {
+    color: #fff81b;
+}
+.link-contato {
+    color:#1c81c0;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}

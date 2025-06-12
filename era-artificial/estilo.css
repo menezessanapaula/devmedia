@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;     
+}
+/* Dicas de implementação: reset CSS - utilizado para definir um estilo global no arquivo.*/
+
+div {
+    text-align: center;
+    border-top: 1px solid #d5d5d5;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+/*Antes de fazer a estilização em css, analisar as estilizações em comum da página, isso torna o código mais limpo. O mercado avalia quem sabe resolver problemas e construir códigos de forma limpa (visualmente)*/ 
+h1, h2, h3, p {
+    text-align: center;
+    margin: 15px 0px;
+}    
+h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+img{
+    width: 190px;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+/*Não esquecer a forma usual de utilizar margin/padding: superior|lateral direita|inferior|lateral|esquerdo*/
+p{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px auto 30px auto;
+    padding: auto;
+    width: 930px;
+}
+span{
+    font-weight: bold ;
+}
+/*Para retirar o sublinhado de link usar - text-decration:none */
+a {
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #49B970;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
