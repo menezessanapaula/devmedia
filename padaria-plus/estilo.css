@@ -1,59 +1,111 @@
-body{
+body {
     margin: 0;
     background-color: #f4f0e5;
-    font-family: Tahoma;
-}
-.secao{
-    width: 700px;
-    margin: 20px auto;
-    text-align: center;
-}
-.logotipo{
-    width: 200px;
-}
-a{
-    margin: 0 10px;
+    font-family: Tahoma, Arial, sans-serif;
     color: #542f0c;
 }
-h1{
-    font-size: 28px;
+
+.secao {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.logotipo {
+    width: 200px;
+    height: auto;
+}
+
+a {
+    margin: 0 10px;
+    color: #542f0c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: #de8e37;
+    outline: none;
+}
+
+h1 {
+    font-size: 2rem;
     padding-top: 30px;
     margin-top: 30px;
     margin-bottom: 0;
     border-top: 1px solid #de8e37;
 }
-h2{
+
+h2 {
     font-weight: normal;
     color: #de8e37;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
-.banner{
-    width: 600px;
+
+.banner {
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
+    height: auto;
 }
-.secao-destaque{
+
+.secao-destaque {
     background-color: #de8e37;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
     color: #fff;
     border-radius: 10px;
 }
-.secao-destaque h3{
-    font-size: 24px;
+
+.secao-destaque h3 {
+    font-size: 1.5rem;
 }
-.secao-destaque h4{
-    font-size: 20px;
+
+.secao-destaque h4 {
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
-.secao-destaque p{
-    width: 500px;
-    margin: 0 auto;
-    line-height: 30px;
+
+.secao-destaque p {
+    max-width: 500px;
+    margin: 0 auto 16px auto;
+    line-height: 1.7;
 }
-.secao-destaque img{
-    width: 400px;
+
+.secao-destaque img {
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
+    height: auto;
+    margin-bottom: 16px;
 }
-span{
+
+span {
     font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 750px) {
+    .secao {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .banner,
+    .secao-destaque img {
+        max-width: 100%;
+        width: 100%;
+    }
 }
