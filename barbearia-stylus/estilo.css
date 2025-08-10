@@ -1,57 +1,210 @@
-body{
-    background-color: white;
+body {
+    background-color: #f4f0e5;
+    color: #444;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
-div{ 
-    width: 600px; 
-    margin: 0 auto;
+
+header.topo {
     text-align: center;
-    color: dimgray;
+    padding: 32px 0 16px 0;
+    background: linear-gradient(90deg, #e9dfdf 0%, #c57b67 100%);
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #fc4a1a33;
+    margin-bottom: 32px;
+    position: relative;
+    animation: fadeInUp 1.2s forwards;
 }
-img{
+
+header.topo img {
     width: 190px;
-    border: 5px solid black;
-    margin: 0 195px;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px #2225;
+    transition: transform 0.3s;
 }
-h1{
-    font-family: Times New Roman;
-    font-size: 26px;
+header.topo img:hover {
+    transform: scale(1.07);
+}
+
+h1 {
+    font-size: 2rem;
     font-weight: bold;
-    padding: 10px;
-    border: solid dimgray;
-    
+    padding: 10px 0;
+    border-bottom: 2px solid #888;
+    margin: 0 0 8px 0;
 }
-h2{
-    font-family: Times New Roman;
-    font-size: 22px;
+
+h2 {
+    font-size: 1.3rem;
     font-weight: bold;
-    border-top: solid dimgray;
-    border-bottom: solid dimgray;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    padding: 8px 0;
+    margin: 0 0 24px 0;
 }
-div{
-    font-family: Times New Roman;
-    font-size: 18px;
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+section {
+    margin-bottom: 32px;
     text-align: center;
-    color: dimgray;
-    margin: 0px auto;
-    width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
 }
-h3{
-    font-weight: normal;
-    border-top: solid dimgray;
-    border-bottom: solid dimgray;
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-p{
-    text-align: justify;
-    line-height: 32px;
 }
-span{
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
 }
-a{
-    font-size: 22px;
-    color: white;
-    background-color: green;
+
+h3 {
+    font-weight: normal;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    main {
+        max-width: 98vw;
+        padding: 0 8px;
+    }
+    header.topo img {
+        width: 98vw;
+        max-width: 220px;
+    }
+}
+
+section.contato {
+    background: linear-gradient(90deg, #25D366 0%, #128C7E 100%);
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #25d36633;
+    padding: 32px 16px;
+    margin-bottom: 32px;
+    position: relative;
+    animation: fadeInUp 1.2s forwards;
+}
+
+section.contato h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+section.contato p, section.contato a {
+    color: #fff;
+    text-align: center;
+}
+
+section.contato a.botao-whatsapp {
+    display: inline-block;
+    background: #fff;
+    color: #128C7E;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-radius: 25px;
+    margin-top: 16px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px #128c7e22;
+    transition: 0.3s, color 0.3s, transform 0.3s;
     text-decoration: none;
-    padding: 10px;
-    border-radius:25px;
+}
+section.contato a.botao-whatsapp:hover,
+section.contato a.botao-whatsapp:focus {
+    background: #128C7E;
+    color: #fff;
+    transform: scale(1.07);
+    outline: none;
+}
+
+section.servicos {
+    background: linear-gradient(90deg, #f7b733 0%, #fc4a1a 100%);
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #fc4a1a33;
+    padding: 32px 16px;
+    margin-bottom: 32px;
+    position: relative;
+    animation: fadeInUp 1.2s forwards;
+}
+
+section.servicos h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+section.servicos p {
+    color: #fff;
+    text-align: center;
+}
+
+/* Harmonização para todas as seções */
+section {
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #8882;
+    padding: 32px 16px;
+    margin-bottom: 32px;
+    position: relative;
+    animation: fadeInUp 1.2s forwards;
+}
+
+/* Ajuste para títulos das seções */
+section h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    border: none;
+    padding: 0;
+    background: none;
+    color: inherit;
 }
